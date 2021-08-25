@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lora',
+    cursive;
+}
+
+#content {
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    background-color: #FF616D;
+    width: 100%; 
+}
+
+nav div {
+    display: flex;
+    margin-top: 0.5em;
+    margin-right: 2em;
+    width: 10em;
+    height: 7vh;
+    justify-content: center;
+    background-color: transparent;
+    border: 4px solid #2a2e2b;
+    border-bottom: 0px;
+}
+
+nav div:hover {
+    background-color: #962D2D;
+    cursor: pointer;
+}
+
+nav h1 {
+    align-self: center;
+    text-transform: capitalize;
+}
+
+.active {
+    background-color: #962D2D;
+}
+
+
+.background {
+    background-image: url('images/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.25);   
+    z-index: -1;
+}
+/*HOME*/
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;   
+}
+
+.header h1 {
+    position: relative;
+    color: #F0FFF0;
+    text-transform: uppercase;
+    font-size: 5rem;
+    letter-spacing: 7px;
+    font-weight: 700;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.header p {
+    position: relative;
+    color: #F0FFF0;
+    padding: 2em;
+    width: 50%;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+/*MENU*/
+.menuDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.menuDiv h1, .contactDiv h1 {
+    margin: 1em;
+    font-size: 4rem;
+    color: #F0FFF0;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.cardsDiv {
+    display: flex;
+    /* flex-direction: column; */
+    width: 60%;
+    height: 100%;
+    justify-content: space-evenly;
+    /* background-color:; */
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    margin: 1em;
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 4px solid #000000;
+    background-color: transparent; 
+    padding: 3em;
+    backdrop-filter: blur(4px);
+    max-width: 400px;
+    margin: 1em;
+    color: #F0FFF0;
+}
+
+.card h2 {
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    letter-spacing: 3px;
+}
+
+.card img {
+    width: 250px;
+    height: 200px;
+    border: 2px solid #FF616D;
+    border-radius: 25px;
+}
+
+.card p {
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+.card img, p {
+    margin-bottom: 0.5em;
+}
+
+.priceText {
+    color: #FF616D;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.contactDiv {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    width: 600px;
+    /* height: 100%; */
+    padding: 3em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contactWrap img {
+    width: 450px;
+}
+
+.contactWrap h3 {
+    text-align: left;
+    color: #F0FFF0;
+    margin-bottom: 1em;
+}
+
+.hoursWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    width: 450px;
+}
+
+.hoursWrap h2 {
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    color: #F0FFF0;
+    font-size: 2.5rem;
+}
+
+.hoursWrap p {
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.hoursWrap p span {
+    font-weight: normal;   
+}
